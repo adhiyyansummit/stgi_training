@@ -24,19 +24,16 @@ Selva's Blog Site
     <h2>My latest posts</h2>
     <ul>
         <li>
-            <article class="post">
-                <a href="">
-                    <img src="" alt="Selva's posts">
-                </a>
-                <div class="post__content">
-                    <h3>Healthy Smoothie</h3>
-                    <p>
-                        Smoothies are a good way to start you healthy day.
-                        Try a smoothie for your breakfast.
-                        Keeps you energetic and full of vigour.
-                    </p>
-                </div>
-            </article>
+            <a href="{% url "single-post-page" slug="1" %}">Itachi</a>
+        </li>
+        <li>
+            <a href="{% url "single-post-page" slug="2" %}">Eren Yeger</a>
+        </li>
+        <li>
+            <a href="{% url "single-post-page" slug="3" %}">Goku</a>
+        </li>
+        <li>
+            <a href="{% url "single-post-page" slug="4" %}">Saturo Gojo</a>
         </li>
     </ul>
 </section>

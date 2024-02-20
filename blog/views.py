@@ -8,6 +8,6 @@ def landing_page(request):
 def posts(request):
     return render(request, "blog/all-posts.html")
 
-def single_post(request):
-    pass
+def single_post(request, slug):
+    return render(request, f"blog/post_detail.html", context={"id":slug})
 
